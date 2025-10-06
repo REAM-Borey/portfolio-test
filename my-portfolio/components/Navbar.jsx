@@ -7,14 +7,14 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const centerMenu = [
-    { name: "Select Address", href: "#" },
-    { name: "Checkout", href: "#" },
-    { name: "Orders", href: "#" },
-    { name: "Manage Products", href: "#" },
+    { name: "project", href: "#" },
+    { name: "About me", href: "#" },
+    { name: "Education", href: "#" },
+    { name: "Contact me", href: "#" },
   ];
 
   return (
-    <nav className="from-indigo-600 to-purple-600 p-15">
+    <nav className="from-indigo-600 to-purple-600 p-9">
       <div className="flex items-center justify-between max-w-7xl mx-auto relative">
 
         {/* Left - Home */}
@@ -110,12 +110,13 @@ export default function Navbar() {
           </ul>
           <Link
             href="/hire-me"
-            className="block text-center bg-white text-indigo-600 font-semibold px-4 py-2 rounded-lg 
-                       shadow hover:bg-indigo-100 transition duration-300"
+            className="block text-center bg-orange-500 text-white font-semibold px-4 py-2 rounded-lg 
+                    shadow hover:bg-orange-600 transition duration-300"
             onClick={() => setIsOpen(false)}
           >
             Hire Me
           </Link>
+
         </div>
       )}
     </nav>
